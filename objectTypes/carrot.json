@@ -1,19 +1,24 @@
 {
-	"name": "Bunny",
+	"name": "Carrot",
 	"plugin-id": "Sprite",
-	"sid": 379141069699122,
+	"sid": 117697735643073,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 251994019999085
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 568723238161290
 		},
 		{
-			"behaviorId": "bound",
-			"name": "BoundToLayout",
-			"sid": 723527239280973
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 462927671553461
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestroyOutsideLayout",
+			"sid": 450007497438480
 		}
 	],
 	"effectTypes": [],
@@ -29,12 +34,24 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9816495,
+						"imageSpriteId": 9202501,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0.18799995422363278,
+								1,
+								0.8199999999999998,
+								0,
+								1
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 911735479187903,
+				"sid": 463522159395510,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

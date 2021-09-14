@@ -2,383 +2,354 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
-			"eventType": "variable",
-			"name": "foodOnScreenAmount",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 432750423282044
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 467508034302056
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "bunnyHitBox",
-					"sid": 410929582946650,
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 124703566818524,
 					"parameters": {
-						"x": "bunny.X",
-						"y": "bunny.Y"
-					}
-				}
-			],
-			"sid": 381822202448780
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "food",
-					"sid": 999829106906791,
-					"parameters": {
-						"instance-variable": "Move"
+						"key": 87
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-x",
-					"objectClass": "food",
-					"sid": 552768763738622,
+					"id": "simulate-control",
+					"objectClass": "Bunny",
+					"sid": 336059725706131,
+					"behaviorType": "Platform",
 					"parameters": {
-						"x": "food.X-4"
+						"control": "jump"
 					}
 				}
 			],
-			"sid": 920616011485697
+			"sid": 176851054321891
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "food",
-					"sid": 163911503979644,
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 938078825049345,
 					"parameters": {
-						"object": "bunnyHitBox"
+						"key": 65
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-boolean-instvar",
-					"objectClass": "food",
-					"sid": 228911831607797,
+					"id": "simulate-control",
+					"objectClass": "Bunny",
+					"sid": 681561057910241,
+					"behaviorType": "Platform",
 					"parameters": {
-						"instance-variable": "Shrink",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "food",
-					"sid": 164571443908423,
-					"parameters": {
-						"instance-variable": "Move",
-						"value": "false"
+						"control": "left"
 					}
 				}
 			],
-			"sid": 592931428237757
+			"sid": 444586164529727
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-any-touch-start",
-					"objectClass": "Touch",
-					"sid": 913837145337760
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 817501263211018,
+					"parameters": {
+						"key": 68
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-boolean-instvar",
-					"objectClass": "hand",
-					"sid": 762298951472012,
+					"id": "simulate-control",
+					"objectClass": "Bunny",
+					"sid": 838419987503567,
+					"behaviorType": "Platform",
 					"parameters": {
-						"instance-variable": "Release",
-						"value": "true"
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 922030052892147,
-					"parameters": {
-						"audio-file": "BLIP2",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
+						"control": "right"
 					}
 				}
 			],
-			"sid": 458487875748756
+			"sid": 917112816116577
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "hand",
-					"sid": 777118212479757,
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 236694346416723,
 					"parameters": {
-						"instance-variable": "Release"
+						"key": 13
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "spawn-another-object",
-					"objectClass": "hand",
-					"sid": 714661152581583,
+					"objectClass": "Hand",
+					"sid": 181096782202129,
 					"parameters": {
-						"object": "food",
+						"object": "Carrot",
 						"layer": "0",
 						"image-point": "0",
 						"create-hierarchy": false
 					}
 				},
 				{
-					"id": "set-animation",
-					"objectClass": "hand",
-					"sid": 669971599223793,
+					"id": "set-speed",
+					"objectClass": "Carrot",
+					"sid": 924538010110639,
+					"behaviorType": "Bullet",
 					"parameters": {
-						"animation": "\"handOpen\"",
-						"from": "beginning"
+						"speed": "300"
 					}
 				},
 				{
-					"id": "set-boolean-instvar",
-					"objectClass": "hand",
-					"sid": 706654041396420,
+					"id": "set-angle-of-motion",
+					"objectClass": "Carrot",
+					"sid": 797599324234683,
+					"behaviorType": "Bullet",
 					"parameters": {
-						"instance-variable": "Release",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "food",
-					"sid": 365388351210813,
-					"parameters": {
-						"width": "57.552",
-						"height": "27.144"
-					}
-				},
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "food",
-					"sid": 914114810997313,
-					"parameters": {
-						"instance-variable": "Move",
-						"value": "true"
+						"angle": "0"
 					}
 				}
 			],
-			"sid": 624890213469740
+			"sid": 661493246976628
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-on-screen",
-					"objectClass": "food",
-					"sid": 377795545995805,
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "food",
-					"sid": 117480765669805
-				}
-			],
-			"sid": 490908818467884
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 924380300196929
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 197820757613576,
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 968566093159004,
 					"parameters": {
-						"variable": "foodOnScreenAmount",
-						"value": "food.Count"
-					}
-				}
-			],
-			"sid": 216616759198395
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 996257099143504,
-					"parameters": {
-						"variable": "foodOnScreenAmount",
-						"comparison": 4,
-						"value": "0"
+						"key": 37
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-animation",
-					"objectClass": "bunny",
-					"sid": 413495169174724,
+					"id": "set-mirrored",
+					"objectClass": "Hand",
+					"sid": 556538295505294,
 					"parameters": {
-						"animation": "\"MouthOpen\"",
-						"from": "beginning"
+						"state": "mirrored"
 					}
 				}
 			],
-			"sid": 252550937435418
+			"sid": 988781145736162
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 300223349949415,
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 908740956184521,
 					"parameters": {
-						"variable": "foodOnScreenAmount",
-						"comparison": 3,
-						"value": "0"
+						"key": 39
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-animation",
-					"objectClass": "bunny",
-					"sid": 917086611480940,
+					"id": "set-mirrored",
+					"objectClass": "Hand",
+					"sid": 199176115766214,
 					"parameters": {
-						"animation": "\"MouthClosed\"",
-						"from": "beginning"
+						"state": "not-mirrored"
 					}
 				}
 			],
-			"sid": 897422280429958
+			"sid": 471948451150033
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "food",
-					"sid": 894300208252436,
-					"parameters": {
-						"instance-variable": "Shrink"
-					}
+					"id": "is-mirrored",
+					"objectClass": "Hand",
+					"sid": 275664099067578
 				}
 			],
 			"actions": [
 				{
-					"id": "rotate-clockwise",
-					"objectClass": "food",
-					"sid": 253029883297446,
+					"id": "set-angle-of-motion",
+					"objectClass": "Carrot",
+					"sid": 235772779557018,
+					"behaviorType": "Bullet",
 					"parameters": {
-						"degrees": "10"
-					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "food",
-					"sid": 802632543890853,
-					"parameters": {
-						"width": "food.Width-1",
-						"height": "food.Height-1"
-					}
-				},
-				{
-					"id": "move-at-angle",
-					"objectClass": "food",
-					"sid": 197912316333374,
-					"parameters": {
-						"angle": "angle(food.x, food.y, bunny.x, bunny.y)",
-						"distance": "2"
+						"angle": "180"
 					}
 				}
 			],
-			"sid": 710116759517750
+			"sid": 669334932112130
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-width",
-					"objectClass": "food",
-					"sid": 620477727694537,
+					"id": "on-collision-with-another-object",
+					"objectClass": "Carrot",
+					"sid": 690056179604548,
 					"parameters": {
-						"comparison": 3,
-						"width": "3"
+						"object": "Bunny"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "food",
-					"sid": 450562920959261
+					"objectClass": "Bunny",
+					"sid": 149478105727048
 				},
 				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 789038596329254,
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 528197627378463,
 					"parameters": {
-						"audio-file": "HICCUP",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
+						"object-to-create": "Bunny2",
+						"layer": "0",
+						"x": "21",
+						"y": "124",
+						"create-hierarchy": false
 					}
 				}
 			],
-			"sid": 914273516186171
+			"sid": 650478088646393
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-any-touch-end",
-					"objectClass": "Touch",
-					"sid": 768806402266185
+					"id": "on-collision-with-another-object",
+					"objectClass": "Carrot",
+					"sid": 127243227089684,
+					"parameters": {
+						"object": "Bunny2"
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-animation",
-					"objectClass": "hand",
-					"sid": 505091153265800,
+					"id": "destroy",
+					"objectClass": "Bunny2",
+					"sid": 713722175453067
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 489114648741702,
 					"parameters": {
-						"animation": "\"handWithFood\"",
-						"from": "beginning"
+						"object-to-create": "Bunny3",
+						"layer": "0",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
 					}
 				}
 			],
-			"sid": 465553139585428
+			"sid": 707214636126895
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Carrot",
+					"sid": 946230423124001,
+					"parameters": {
+						"object": "Bunny3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Bunny3",
+					"sid": 652184233957731
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 919969720446200,
+					"parameters": {
+						"object-to-create": "Bunny4",
+						"layer": "0",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 428007123523031
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Carrot",
+					"sid": 177860992598997,
+					"parameters": {
+						"object": "Bunny4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Bunny4",
+					"sid": 154598265072163
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 468064491750997,
+					"parameters": {
+						"object-to-create": "Bunny5",
+						"layer": "0",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 228052360265891
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Carrot",
+					"sid": 839010837225705,
+					"parameters": {
+						"object": "Bunny5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Bunny5",
+					"sid": 142881987825486
+				}
+			],
+			"sid": 306048850453203
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 435437686621228
 		}
 	],
-	"sid": 516847117888192
+	"sid": 729270037668321
 }

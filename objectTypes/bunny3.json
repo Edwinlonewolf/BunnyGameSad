@@ -1,19 +1,19 @@
 {
-	"name": "Bunny",
+	"name": "Bunny3",
 	"plugin-id": "Sprite",
-	"sid": 379141069699122,
+	"sid": 940162626838924,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Platform",
 			"name": "Platform",
-			"sid": 251994019999085
+			"sid": 740429914679746
 		},
 		{
 			"behaviorId": "bound",
 			"name": "BoundToLayout",
-			"sid": 723527239280973
+			"sid": 429749280643159
 		}
 	],
 	"effectTypes": [],
@@ -29,12 +29,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9816495,
+						"imageSpriteId": 9148742,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 911735479187903,
+				"sid": 840390466838596,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
