@@ -22,6 +22,42 @@
 					"parameters": {
 						"control": "jump"
 					}
+				},
+				{
+					"id": "simulate-control",
+					"objectClass": "Bunny2",
+					"sid": 303874761105557,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "jump"
+					}
+				},
+				{
+					"id": "simulate-control",
+					"objectClass": "Bunny3",
+					"sid": 328098544814719,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "jump"
+					}
+				},
+				{
+					"id": "simulate-control",
+					"objectClass": "Bunny4",
+					"sid": 875003447138654,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "jump"
+					}
+				},
+				{
+					"id": "simulate-control",
+					"objectClass": "Bunny5",
+					"sid": 581216720674312,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "jump"
+					}
 				}
 			],
 			"sid": 176851054321891
@@ -47,6 +83,42 @@
 					"parameters": {
 						"control": "left"
 					}
+				},
+				{
+					"id": "simulate-control",
+					"objectClass": "Bunny2",
+					"sid": 109328002070966,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "simulate-control",
+					"objectClass": "Bunny3",
+					"sid": 539164444549713,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "simulate-control",
+					"objectClass": "Bunny4",
+					"sid": 180219291463915,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "simulate-control",
+					"objectClass": "Bunny5",
+					"sid": 379808759155882,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "left"
+					}
 				}
 			],
 			"sid": 444586164529727
@@ -68,6 +140,42 @@
 					"id": "simulate-control",
 					"objectClass": "Bunny",
 					"sid": 838419987503567,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "right"
+					}
+				},
+				{
+					"id": "simulate-control",
+					"objectClass": "Bunny2",
+					"sid": 430134050072211,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "right"
+					}
+				},
+				{
+					"id": "simulate-control",
+					"objectClass": "Bunny3",
+					"sid": 159260671157638,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "right"
+					}
+				},
+				{
+					"id": "simulate-control",
+					"objectClass": "Bunny4",
+					"sid": 610884986867129,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "right"
+					}
+				},
+				{
+					"id": "simulate-control",
+					"objectClass": "Bunny5",
+					"sid": 191766402095426,
 					"behaviorType": "Platform",
 					"parameters": {
 						"control": "right"
@@ -107,15 +215,6 @@
 					"behaviorType": "Bullet",
 					"parameters": {
 						"speed": "300"
-					}
-				},
-				{
-					"id": "set-angle-of-motion",
-					"objectClass": "Carrot",
-					"sid": 797599324234683,
-					"behaviorType": "Bullet",
-					"parameters": {
-						"angle": "0"
 					}
 				}
 			],
@@ -173,28 +272,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-mirrored",
-					"objectClass": "Hand",
-					"sid": 275664099067578
-				}
-			],
-			"actions": [
-				{
-					"id": "set-angle-of-motion",
-					"objectClass": "Carrot",
-					"sid": 235772779557018,
-					"behaviorType": "Bullet",
-					"parameters": {
-						"angle": "180"
-					}
-				}
-			],
-			"sid": 669334932112130
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Carrot",
 					"sid": 690056179604548,
@@ -212,12 +289,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 528197627378463,
+					"sid": 825255691425939,
 					"parameters": {
 						"object-to-create": "Bunny2",
 						"layer": "0",
-						"x": "21",
-						"y": "124",
+						"x": "6",
+						"y": "383",
 						"create-hierarchy": false
 					}
 				}
@@ -245,12 +322,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 489114648741702,
+					"sid": 287693468402168,
 					"parameters": {
 						"object-to-create": "Bunny3",
 						"layer": "0",
-						"x": "0",
-						"y": "0",
+						"x": "6",
+						"y": "383",
 						"create-hierarchy": false
 					}
 				}
@@ -346,9 +423,124 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [],
-			"actions": [],
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Carrot",
+					"sid": 158790265279023
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 140913101370716,
+					"parameters": {
+						"seconds": "2.0"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Carrot",
+					"sid": 855437276027044
+				}
+			],
 			"sid": 435437686621228
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Carrot",
+					"sid": 513146186862153
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "Hand",
+					"sid": 706040912445533
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "Carrot",
+					"sid": 295877652186143,
+					"parameters": {
+						"angle": "180"
+					}
+				}
+			],
+			"sid": 449774582430596
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Bunny",
+					"sid": 797989581874199
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Bunny2",
+					"sid": 576679426375875,
+					"parameters": {
+						"object": "Bunny2",
+						"layer": "6",
+						"image-point": "383",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 755681305412668
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Bunny2",
+					"sid": 335188681408390
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Bunny2",
+					"sid": 249125417476812,
+					"parameters": {
+						"object": "Bunny3",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 384772601350837
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 326118097288997,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 823247125019844
+				}
+			],
+			"sid": 789305556703711
 		}
 	],
 	"sid": 729270037668321
