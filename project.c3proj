@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 26000,
-	"name": "BunnyGame",
+	"name": "The Sad Bunny",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
@@ -24,30 +24,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Mouse",
-			"name": "Mouse",
-			"author": "Scirra",
-			"version": "r260",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Touch",
-			"name": "Touch",
-			"author": "Scirra",
-			"version": "r260",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Audio",
-			"name": "Audio",
-			"author": "Scirra",
-			"version": "r260",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
@@ -55,30 +31,59 @@
 			"bundled": false
 		},
 		{
-			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Tiled Background",
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Bound to layout",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destroy outside layout",
 			"author": "Scirra",
 			"version": "r260",
 			"bundled": false
 		}
 	],
-	"uniqueId": "zlhfpuvi5s8",
+	"uniqueId": "e9p4oev8rdc",
 	"objectTypes": {
 		"items": [
-			"bunny",
-			"hand",
-			"food",
+			"Bunny",
+			"Carrot",
+			"Hand",
+			"Platform",
 			"Keyboard",
-			"Mouse",
-			"Touch",
-			"bunnyHitBox",
-			"Audio",
-			"Instructions",
-			"TiledBackground",
-			"Sprite",
-			"Sprite2",
-			"Sprite3"
+			"Bunny2",
+			"Bunny3",
+			"Bunny4",
+			"Bunny5",
+			"Narrative"
 		],
 		"subfolders": []
 	},
@@ -106,18 +111,7 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [
-				{
-					"name": "HICCUP.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 870050272404946
-				},
-				{
-					"name": "BLIP2.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 414782323902734
-				}
-			],
+			"items": [],
 			"subfolders": []
 		},
 		"music": {
@@ -135,25 +129,9 @@
 		"icon": {
 			"items": [
 				{
-					"name": "icon-16.png",
-					"type": "image/png",
-					"sid": 553948354982967,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
 					"name": "icon-32.png",
 					"type": "image/png",
-					"sid": 106824991827696,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-64.png",
-					"type": "image/png",
-					"sid": 555184246858865,
+					"sid": 337116400741269,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -161,7 +139,7 @@
 				{
 					"name": "icon-128.png",
 					"type": "image/png",
-					"sid": 251001441141264,
+					"sid": 295417826936482,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -169,7 +147,31 @@
 				{
 					"name": "icon-512.png",
 					"type": "image/png",
-					"sid": 854284085337158,
+					"sid": 129180213621009,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 711336700229116,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 431998110151573,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 677548459663652,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -177,17 +179,9 @@
 				{
 					"name": "loading-logo.png",
 					"type": "image/png",
-					"sid": 372437122798884,
+					"sid": 924346750237008,
 					"icon-info": {
 						"purpose": "loading-logo"
-					}
-				},
-				{
-					"name": "icon-256.png",
-					"type": "image/png",
-					"sid": 659962773803887,
-					"icon-info": {
-						"purpose": "app-icon"
 					}
 				}
 			],
@@ -199,7 +193,9 @@
 		}
 	},
 	"timelines": {
-		"items": [],
+		"items": [
+			"Timeline 1"
+		],
 		"subfolders": [
 			{
 				"items": [],
@@ -214,28 +210,28 @@
 		"authorEmail": "",
 		"authorWebsite": "",
 		"appId": "",
-		"pixelRounding": true,
+		"pixelRounding": false,
 		"useLoaderLayout": false,
-		"fullscreenMode": "letterbox-integer-scale",
+		"fullscreenMode": "letterbox-scale",
 		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
-			1,
-			0.803921568627451,
-			0.9411764705882353,
+			0,
+			0,
+			0,
 			0
 		],
 		"splashColor": [
 			1,
-			0.803921568627451,
-			0.9411764705882353,
+			1,
+			1,
 			0
 		],
-		"useThemeColor": true,
+		"useThemeColor": false,
 		"themeColor": [
 			1,
-			0.803921568627451,
-			0.9411764705882353,
+			1,
+			1,
 			0
 		],
 		"orientations": "landscape",
@@ -252,7 +248,7 @@
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app"
 	},
-	"viewportWidth": 640,
+	"viewportWidth": 854,
 	"viewportHeight": 480,
 	"firstLayout": null
 }
