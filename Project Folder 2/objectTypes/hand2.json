@@ -1,21 +1,21 @@
 {
 	"name": "hand2",
 	"plugin-id": "Sprite",
-	"sid": 603061374117936,
+	"sid": 462884070886223,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
 			"name": "Release",
 			"type": "boolean",
 			"desc": "",
-			"sid": 907213640289545
+			"sid": 527194488764438
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "EightDir",
 			"name": "8Direction",
-			"sid": 711045508855030
+			"sid": 573837791085798
 		}
 	],
 	"effectTypes": [],
@@ -31,12 +31,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2424330,
+						"imageSpriteId": 8657211,
 						"useCollisionPoly": true,
 						"duration": 0
 					}
 				],
-				"sid": 627716719110108,
+				"sid": 476830761180145,
 				"name": "handWithFood",
 				"isLooping": false,
 				"isPingPong": false,
@@ -54,12 +54,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9075815,
+						"imageSpriteId": 8372099,
 						"useCollisionPoly": true,
 						"duration": 0
 					}
 				],
-				"sid": 829148326454774,
+				"sid": 135323003300814,
 				"name": "handNoFood",
 				"isLooping": false,
 				"isPingPong": false,
@@ -77,12 +77,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6903033,
+						"imageSpriteId": 5752851,
 						"useCollisionPoly": true,
 						"duration": 0
 					}
 				],
-				"sid": 472138914877095,
+				"sid": 116859125541175,
 				"name": "handOpen",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,20 +1,20 @@
 {
-	"name": "food2",
+	"name": "food7",
 	"plugin-id": "Sprite",
-	"sid": 201720619849591,
+	"sid": 186051356105132,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
 			"name": "Move",
 			"type": "boolean",
 			"desc": "Moves carrot Left",
-			"sid": 803989566817062
+			"sid": 573631571382057
 		},
 		{
 			"name": "Shrink",
 			"type": "boolean",
 			"desc": "Makes food go into mouth",
-			"sid": 845499642724494
+			"sid": 435984271060291
 		}
 	],
 	"behaviorTypes": [],
@@ -31,12 +31,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 274470,
+						"imageSpriteId": 9603955,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 455265453804500,
+				"sid": 875684288292359,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

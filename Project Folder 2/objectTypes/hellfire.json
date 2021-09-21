@@ -1,7 +1,7 @@
 {
 	"name": "HellFire",
 	"plugin-id": "Sprite",
-	"sid": 649416995887009,
+	"sid": 284967665187326,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 233106,
+						"imageSpriteId": 7785164,
 						"collisionPoly": {
 							"points": [
 								0.032000122070312484,
@@ -35,7 +35,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 183815761906106,
+				"sid": 535253837891230,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

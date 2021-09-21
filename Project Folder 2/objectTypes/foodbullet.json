@@ -1,23 +1,29 @@
 {
-	"name": "food2",
+	"name": "foodbullet",
 	"plugin-id": "Sprite",
-	"sid": 201720619849591,
+	"sid": 348467738519638,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
 			"name": "Move",
 			"type": "boolean",
 			"desc": "Moves carrot Left",
-			"sid": 803989566817062
+			"sid": 703747516826865
 		},
 		{
 			"name": "Shrink",
 			"type": "boolean",
 			"desc": "Makes food go into mouth",
-			"sid": 845499642724494
+			"sid": 187927932024086
 		}
 	],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 160665207721436
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -31,12 +37,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 274470,
+						"imageSpriteId": 1821243,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 455265453804500,
+				"sid": 403918017461065,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
