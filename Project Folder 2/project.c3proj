@@ -1,15 +1,47 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 26000,
-	"name": "The Sad Bunny",
+	"name": "BunnyGame",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
 			"author": "Scirra",
 			"version": "r260",
 			"bundled": false
@@ -24,67 +56,29 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
-			"author": "Scirra",
-			"version": "r260",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Touch",
-			"name": "Touch",
-			"author": "Scirra",
-			"version": "r260",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
-			"author": "Scirra",
-			"version": "r260",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "EightDir",
-			"name": "8 Direction",
-			"author": "Scirra",
-			"version": "r260",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Bullet",
-			"name": "Bullet",
+			"id": "TiledBg",
+			"name": "Tiled Background",
 			"author": "Scirra",
 			"version": "r260",
 			"bundled": false
 		}
 	],
-	"uniqueId": "e9p4oev8rdc",
+	"uniqueId": "zlhfpuvi5s8",
 	"objectTypes": {
 		"items": [
-			"Keyboard",
-			"Narrative",
-			"HellFire",
 			"bunny",
-			"bunnyHitBox",
-			"Paths",
-			"food1",
-			"hand2",
+			"hand",
+			"food",
+			"Keyboard",
+			"Mouse",
 			"Touch",
-			"food2",
-			"food3",
-			"food4",
-			"food5",
-			"food6",
-			"food7",
-			"foodbullet",
-			"bunny2",
-			"bunny3",
-			"bunny4"
+			"bunnyHitBox",
+			"Audio",
+			"Instructions",
+			"TiledBackground",
+			"Sprite",
+			"Sprite2",
+			"Sprite3"
 		],
 		"subfolders": []
 	},
@@ -112,7 +106,18 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "HICCUP.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 870050272404946
+				},
+				{
+					"name": "BLIP2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 414782323902734
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
@@ -130,33 +135,17 @@
 		"icon": {
 			"items": [
 				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 553948354982967,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
 					"name": "icon-32.png",
 					"type": "image/png",
-					"sid": 337116400741269,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-128.png",
-					"type": "image/png",
-					"sid": 295417826936482,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-512.png",
-					"type": "image/png",
-					"sid": 129180213621009,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-256.png",
-					"type": "image/png",
-					"sid": 711336700229116,
+					"sid": 106824991827696,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -164,15 +153,23 @@
 				{
 					"name": "icon-64.png",
 					"type": "image/png",
-					"sid": 431998110151573,
+					"sid": 555184246858865,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
 				},
 				{
-					"name": "icon-16.png",
+					"name": "icon-128.png",
 					"type": "image/png",
-					"sid": 677548459663652,
+					"sid": 251001441141264,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 854284085337158,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -180,9 +177,17 @@
 				{
 					"name": "loading-logo.png",
 					"type": "image/png",
-					"sid": 924346750237008,
+					"sid": 372437122798884,
 					"icon-info": {
 						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 659962773803887,
+					"icon-info": {
+						"purpose": "app-icon"
 					}
 				}
 			],
@@ -194,9 +199,7 @@
 		}
 	},
 	"timelines": {
-		"items": [
-			"Timeline 1"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [],
@@ -211,28 +214,28 @@
 		"authorEmail": "",
 		"authorWebsite": "",
 		"appId": "",
-		"pixelRounding": false,
+		"pixelRounding": true,
 		"useLoaderLayout": false,
-		"fullscreenMode": "letterbox-scale",
+		"fullscreenMode": "letterbox-integer-scale",
 		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
-			0,
-			0,
-			0,
+			1,
+			0.803921568627451,
+			0.9411764705882353,
 			0
 		],
 		"splashColor": [
 			1,
-			1,
-			1,
+			0.803921568627451,
+			0.9411764705882353,
 			0
 		],
-		"useThemeColor": false,
+		"useThemeColor": true,
 		"themeColor": [
 			1,
-			1,
-			1,
+			0.803921568627451,
+			0.9411764705882353,
 			0
 		],
 		"orientations": "landscape",
@@ -245,11 +248,11 @@
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "splash",
+		"loaderStyle": "progress",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app"
 	},
-	"viewportWidth": 854,
+	"viewportWidth": 640,
 	"viewportHeight": 480,
 	"firstLayout": null
 }
