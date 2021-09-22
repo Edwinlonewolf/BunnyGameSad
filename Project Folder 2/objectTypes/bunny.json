@@ -1,7 +1,7 @@
 {
 	"name": "bunny",
 	"plugin-id": "Sprite",
-	"sid": 912099301930264,
+	"sid": 940579050120407,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,14 +11,14 @@
 			{
 				"frames": [
 					{
-						"width": 199,
-						"height": 235,
+						"width": 1000,
+						"height": 2000,
 						"originX": 0.5025125628140703,
 						"originY": 0.502127659574468,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7853378,
+						"imageSpriteId": 6137133,
 						"collisionPoly": {
 							"points": [
 								0.005025125628140704,
@@ -35,7 +35,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 293316379393652,
+				"sid": 601024288905542,
 				"name": "MouthClosed",
 				"isLooping": false,
 				"isPingPong": false,
@@ -53,7 +53,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2927453,
+						"imageSpriteId": 2502687,
 						"collisionPoly": {
 							"points": [
 								0.005025125628140704,
@@ -70,7 +70,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 695451428314258,
+				"sid": 260472276303524,
 				"name": "MouthOpen",
 				"isLooping": false,
 				"isPingPong": false,

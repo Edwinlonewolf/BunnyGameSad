@@ -11,27 +11,21 @@
 			"sid": 535699816074362
 		}
 	],
-	"behaviorTypes": [
-		{
-			"behaviorId": "EightDir",
-			"name": "8Direction",
-			"sid": 617237402962261
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 1000,
+						"height": 1000,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3742666,
+						"imageSpriteId": 8187671,
 						"useCollisionPoly": true,
 						"duration": 0
 					}
