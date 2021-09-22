@@ -1,0 +1,75 @@
+{
+	"name": "Event sheet 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 182525815293103,
+					"parameters": {
+						"key": 13
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 647127154822901,
+					"parameters": {
+						"layout": "Gameplay"
+					}
+				}
+			],
+			"sid": 285724037417390
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 828526584170383
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 500050716294786,
+					"parameters": {
+						"audio-file": "taste-of-defeat_by_rotem-moav_Artlist",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 524836268451660
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 557139586461676
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 235434707022079,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 912270874020568
+		}
+	],
+	"sid": 821570970924308
+}

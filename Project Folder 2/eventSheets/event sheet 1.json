@@ -53,7 +53,7 @@
 				{
 					"id": "set-animation",
 					"objectClass": "bunny2",
-					"sid": 191168214396067,
+					"sid": 885790109657104,
 					"parameters": {
 						"animation": "\"MouthOpen\"",
 						"from": "beginning"
@@ -62,7 +62,7 @@
 				{
 					"id": "set-animation",
 					"objectClass": "bunny3",
-					"sid": 440101344749473,
+					"sid": 692478321833635,
 					"parameters": {
 						"animation": "\"MouthOpen\"",
 						"from": "beginning"
@@ -71,7 +71,25 @@
 				{
 					"id": "set-animation",
 					"objectClass": "bunny4",
-					"sid": 427771445858703,
+					"sid": 566886506375625,
+					"parameters": {
+						"animation": "\"MouthOpen\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "bunny5",
+					"sid": 519876354396405,
+					"parameters": {
+						"animation": "\"MouthOpen\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "bunny6",
+					"sid": 129398061969225,
 					"parameters": {
 						"animation": "\"MouthOpen\"",
 						"from": "beginning"
@@ -164,10 +182,10 @@
 				{
 					"id": "set-size",
 					"objectClass": "foodbullet",
-					"sid": 359416534264027,
+					"sid": 995700789554503,
 					"parameters": {
-						"width": "57.552",
-						"height": "27.144"
+						"width": "31",
+						"height": "13"
 					}
 				}
 			],
@@ -454,12 +472,35 @@
 			],
 			"actions": [
 				{
-					"id": "set-animation",
+					"id": "spawn-another-object",
 					"objectClass": "bunny",
-					"sid": 699511838743301,
+					"sid": 184988614014887,
 					"parameters": {
-						"animation": "\"MouthOpen\"",
-						"from": "beginning"
+						"object": "bunny2",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "bunny",
+					"sid": 202150890074665
+				},
+				{
+					"id": "destroy",
+					"objectClass": "foodbullet",
+					"sid": 137687140372109
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 636597216595263,
+					"parameters": {
+						"audio-file": "Cartoon Chewing and Swallowing Food SFX",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -515,6 +556,342 @@
 				}
 			],
 			"sid": 765273440097120
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "foodbullet",
+					"sid": 683439599291276,
+					"parameters": {
+						"object": "bunny2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "bunny2",
+					"sid": 812457577683301,
+					"parameters": {
+						"object": "bunny3",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "bunny2",
+					"sid": 819262155995327
+				},
+				{
+					"id": "destroy",
+					"objectClass": "foodbullet",
+					"sid": 502832352437028
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 291651253942844,
+					"parameters": {
+						"audio-file": "Cartoon Chewing and Swallowing Food SFX",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 306271981842106
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "foodbullet",
+					"sid": 583981130684392,
+					"parameters": {
+						"object": "bunny3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "bunny3",
+					"sid": 105263571875422,
+					"parameters": {
+						"object": "bunny4",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "bunny3",
+					"sid": 318712151541844
+				},
+				{
+					"id": "destroy",
+					"objectClass": "foodbullet",
+					"sid": 243512933237232
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 764475146835505,
+					"parameters": {
+						"audio-file": "Cartoon Chewing and Swallowing Food SFX",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 865497829307149
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "foodbullet",
+					"sid": 467133367336427,
+					"parameters": {
+						"object": "bunny4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "bunny4",
+					"sid": 723158127253765,
+					"parameters": {
+						"object": "bunny5",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "bunny4",
+					"sid": 161024873246965
+				},
+				{
+					"id": "destroy",
+					"objectClass": "foodbullet",
+					"sid": 262418260900601
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 320905038960899,
+					"parameters": {
+						"audio-file": "Coughing_Sound_Effect",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 490220607349844
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "foodbullet",
+					"sid": 250138136328429,
+					"parameters": {
+						"object": "bunny5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "bunny5",
+					"sid": 463993241902147,
+					"parameters": {
+						"object": "bunny6",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "bunny5",
+					"sid": 237995739029143
+				},
+				{
+					"id": "destroy",
+					"objectClass": "foodbullet",
+					"sid": 996765629261403
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 419119826947411,
+					"parameters": {
+						"audio-file": "Coughing_Sound_Effect",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 918818862610631
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "foodbullet",
+					"sid": 100184033851927,
+					"parameters": {
+						"object": "bunny6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "bunny6",
+					"sid": 965126115083503,
+					"parameters": {
+						"object": "bunny7",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "bunny6",
+					"sid": 978130434607308
+				},
+				{
+					"id": "destroy",
+					"objectClass": "foodbullet",
+					"sid": 252083718606420
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 382803686466558,
+					"parameters": {
+						"audio-file": "POP - Sound Effect",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 302859385116056
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "hand2",
+					"sid": 781055501016121,
+					"parameters": {
+						"object": "Escape"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 910288823788710,
+					"parameters": {
+						"layout": "Game Over"
+					}
+				}
+			],
+			"sid": 544085378763453
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "hand2",
+					"sid": 265980332561015,
+					"parameters": {
+						"object": "food9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "hand2",
+					"sid": 526763215267097,
+					"parameters": {
+						"animation": "\"handWithFood\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "food9",
+					"sid": 760508418254531
+				}
+			],
+			"sid": 948885434941598
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 182024852751476
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 210914662071787,
+					"parameters": {
+						"audio-file": "foreboding_by_lux-inspira_Artlist",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 117227146518850
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 572072352046585
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 838598692269618
+				}
+			],
+			"sid": 290338783584610
 		}
 	],
 	"sid": 729270037668321

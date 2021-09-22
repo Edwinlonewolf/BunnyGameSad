@@ -1,46 +1,41 @@
 {
-	"name": "HellFire",
+	"name": "Escape",
 	"plugin-id": "Sprite",
-	"sid": 284967665187326,
+	"sid": 441887714844695,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [
-		{
-			"effectId": "waterbg",
-			"name": "WaterBackground"
-		}
-	],
+	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 252,
+						"height": 198,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.36363636363636365,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7785164,
+						"imageSpriteId": 9238185,
 						"collisionPoly": {
 							"points": [
-								0.032000122070312484,
-								0.04400001525878906,
-								1,
-								0.12400009155273435,
-								1,
-								1,
 								0,
-								1
+								0.3232324002969143,
+								1,
+								0.34848473288796145,
+								0.996031746031746,
+								0.9949494949494949,
+								0.003968253968253968,
+								0.9949494949494949
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 535253837891230,
+				"sid": 948831173531413,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,0 +1,72 @@
+{
+	"name": "Event sheet 3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 260389834179814,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 672794482163075,
+					"parameters": {
+						"layout": "Start Screen"
+					}
+				}
+			],
+			"sid": 794335462680761
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 853930324230843
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 666685469621656,
+					"parameters": {
+						"audio-file": "Dearly Beloved_Kingdom Hearts [Music Box]",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 918749358467364
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 429935940904276
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 972565006896161
+				}
+			],
+			"sid": 972589873959411
+		}
+	],
+	"sid": 500990336519145
+}

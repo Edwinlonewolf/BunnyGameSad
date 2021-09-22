@@ -1,16 +1,11 @@
 {
-	"name": "HellFire",
+	"name": "Frame",
 	"plugin-id": "Sprite",
-	"sid": 284967665187326,
+	"sid": 611412863069690,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [
-		{
-			"effectId": "waterbg",
-			"name": "WaterBackground"
-		}
-	],
+	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
@@ -23,24 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7785164,
-						"collisionPoly": {
-							"points": [
-								0.032000122070312484,
-								0.04400001525878906,
-								1,
-								0.12400009155273435,
-								1,
-								1,
-								0,
-								1
-							]
-						},
+						"imageSpriteId": 9524106,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 535253837891230,
+				"sid": 353554233459833,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

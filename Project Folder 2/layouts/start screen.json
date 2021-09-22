@@ -1,0 +1,273 @@
+{
+	"name": "Start Screen",
+	"layers": [
+		{
+			"name": "Layer 0",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Frame",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 59,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 722,
+						"y": 247,
+						"width": 207,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.27548686718925375,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Narrative",
+					"properties": {
+						"text": "You died, but death is not the end. If you want to walk your way to freedom, a sacrifice must be made. A soul for a soul.",
+						"enable-bbcode": true,
+						"font": "Copperplate Gothic",
+						"size": 15,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.9490196078431372,
+							0.9490196078431372,
+							0.9490196078431372,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 23,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 273,
+						"y": 179,
+						"width": 285.9782451228109,
+						"height": 153.04150454561022,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.0006802810540031956,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HellFire",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 57,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 3,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 20,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						}
+					},
+					"world": {
+						"x": 425.4582003935485,
+						"y": 398.7216604116498,
+						"width": 863.3326479538719,
+						"height": -187.0331995031299,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.1454842669330345,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "bunny",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "MouthClosed",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 58,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 716,
+						"y": 241,
+						"width": 80.60000000000001,
+						"height": 174.54,
+						"originX": 0.5025125628140703,
+						"originY": 0.502127659574468,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.272457869440885,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Narrative",
+					"properties": {
+						"text": "Buttons",
+						"enable-bbcode": true,
+						"font": "Copperplate Gothic",
+						"size": 60,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 60,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 23,
+						"y": 42,
+						"width": 633,
+						"height": 99,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Narrative",
+					"properties": {
+						"text": "Hit Enter to start",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 15,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 61,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 21,
+						"y": 278,
+						"width": 192.99758132116028,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.0002692091484171044,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 485503577023831,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.49411764705882355,
+				0.3803921568627451,
+				0.18823529411764706,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"sid": 352385235686487,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 1708,
+	"height": 960,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"eventSheet": "Event sheet 2"
+}

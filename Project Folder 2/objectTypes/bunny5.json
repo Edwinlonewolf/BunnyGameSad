@@ -1,7 +1,7 @@
 {
-	"name": "bunny2",
+	"name": "bunny5",
 	"plugin-id": "Sprite",
-	"sid": 175566421598993,
+	"sid": 939322282395218,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9988006,
+						"imageSpriteId": 8688600,
 						"collisionPoly": {
 							"points": [
 								0.005025125628140704,
@@ -35,7 +35,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 201273140183713,
+				"sid": 810084537646810,
 				"name": "MouthClosed",
 				"isLooping": false,
 				"isPingPong": false,
@@ -53,24 +53,24 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7162068,
+						"imageSpriteId": 7023078,
 						"collisionPoly": {
 							"points": [
-								0.3768841154012252,
-								0.510638281639586,
-								0.6080400476503617,
-								0.5021276920399766,
-								0.6281406268402568,
-								0.706382913792387,
-								0.3768841154012247,
-								0.6936171511386302
+								0.35175887064718137,
+								0.5234042877846573,
+								0.6331660591777248,
+								0.5148936170212766,
+								0.5678392726572324,
+								0.676595647284326,
+								0.39698469459111985,
+								0.6765958096118688
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 623020288707226,
+				"sid": 516111840092336,
 				"name": "MouthOpen",
 				"isLooping": false,
 				"isPingPong": false,

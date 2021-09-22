@@ -39,6 +39,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
@@ -61,6 +69,14 @@
 			"author": "Scirra",
 			"version": "r260",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "waterbg",
+			"name": "Water background",
+			"author": "Viktor Korsun",
+			"version": "r260",
+			"bundled": false
 		}
 	],
 	"uniqueId": "e9p4oev8rdc",
@@ -70,7 +86,6 @@
 			"Narrative",
 			"HellFire",
 			"bunny",
-			"bunnyHitBox",
 			"Paths",
 			"food1",
 			"hand2",
@@ -82,11 +97,19 @@
 			"food6",
 			"food7",
 			"foodbullet",
+			"food8",
+			"food9",
 			"bunny2",
 			"bunny3",
 			"bunny4",
-			"food8",
-			"food9"
+			"bunny5",
+			"bunny6",
+			"bunny7",
+			"Escape",
+			"Frame",
+			"Audio",
+			"Grass",
+			"Frame2"
 		],
 		"subfolders": []
 	},
@@ -98,13 +121,17 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Start Screen",
+			"Gameplay",
+			"Game Over"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"Event sheet 2",
+			"Event sheet 3"
 		],
 		"subfolders": []
 	},
@@ -118,7 +145,38 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "foreboding_by_lux-inspira_Artlist.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 592789889137352
+				},
+				{
+					"name": "taste-of-defeat_by_rotem-moav_Artlist.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 604938488958705
+				},
+				{
+					"name": "Coughing_Sound_Effect.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 459684959052762
+				},
+				{
+					"name": "Cartoon Chewing and Swallowing Food SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 217898562821313
+				},
+				{
+					"name": "Dearly Beloved_Kingdom Hearts [Music Box].webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 651964377598743
+				},
+				{
+					"name": "POP - Sound Effect.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 113326004302827
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
