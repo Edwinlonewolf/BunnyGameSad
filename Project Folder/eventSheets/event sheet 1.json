@@ -1,0 +1,434 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "hand2",
+					"sid": 886720092609657,
+					"parameters": {
+						"object": "HellFire"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 730356598077487
+				}
+			],
+			"sid": 884545018034065
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-end",
+					"objectClass": "Touch",
+					"sid": 256287800378442
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "hand2",
+					"sid": 290535014114138,
+					"parameters": {
+						"animation": "\"handOpen\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 479254607583329
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "food1",
+					"sid": 674225895039004,
+					"parameters": {
+						"object": "hand2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "hand2",
+					"sid": 598685432322749,
+					"parameters": {
+						"animation": "\"handWithFood\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "food1",
+					"sid": 347931727773292
+				}
+			],
+			"sid": 305560992238821
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "hand2",
+					"sid": 535164215858683,
+					"parameters": {
+						"instance-variable": "Release"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "hand2",
+					"sid": 929303414844335,
+					"parameters": {
+						"object": "foodbullet",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "hand2",
+					"sid": 862172815792612,
+					"parameters": {
+						"animation": "\"handOpen\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "hand2",
+					"sid": 864370010137925,
+					"parameters": {
+						"instance-variable": "Release",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "foodbullet",
+					"sid": 500148953015350,
+					"parameters": {
+						"instance-variable": "Move",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "foodbullet",
+					"sid": 359416534264027,
+					"parameters": {
+						"width": "57.552",
+						"height": "27.144"
+					}
+				}
+			],
+			"sid": 559887425432252
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-start",
+					"objectClass": "Touch",
+					"sid": 975990969647235
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "hand2",
+					"sid": 614534390771995,
+					"parameters": {
+						"instance-variable": "Release",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 350422819619224
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "foodbullet",
+					"sid": 324967349415227
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "bunny",
+					"sid": 525568368309625,
+					"parameters": {
+						"animation": "\"MouthClosed\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 986922718155065
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "hand2",
+					"sid": 765385699503834
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "hand2",
+					"sid": 550696755785449,
+					"parameters": {
+						"animation": "\"handNoFood\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 260756993864198
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "hand2",
+					"sid": 875788509574084,
+					"parameters": {
+						"object": "food2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "food2",
+					"sid": 166523812134656
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "hand2",
+					"sid": 540336773269159,
+					"parameters": {
+						"animation": "\"handWithFood\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 432041941283621
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "hand2",
+					"sid": 207680563129061,
+					"parameters": {
+						"object": "food3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "food3",
+					"sid": 408032750005558
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "hand2",
+					"sid": 257491886408209,
+					"parameters": {
+						"animation": "\"handWithFood\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 642750309942879
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "hand2",
+					"sid": 981853791191210,
+					"parameters": {
+						"object": "food4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "food4",
+					"sid": 956483710559944
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "hand2",
+					"sid": 956215656808211,
+					"parameters": {
+						"animation": "\"handWithFood\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 165811480808713
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "hand2",
+					"sid": 701551228348860,
+					"parameters": {
+						"object": "food5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "hand2",
+					"sid": 409513458515720,
+					"parameters": {
+						"animation": "\"handWithFood\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "food5",
+					"sid": 573439081033881
+				}
+			],
+			"sid": 942320714899440
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "hand2",
+					"sid": 199797101655878,
+					"parameters": {
+						"object": "food6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "hand2",
+					"sid": 615199464328073,
+					"parameters": {
+						"animation": "\"handWithFood\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "food6",
+					"sid": 366093751861508
+				}
+			],
+			"sid": 322254768227443
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "hand2",
+					"sid": 443662933817172,
+					"parameters": {
+						"object": "food7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "hand2",
+					"sid": 424520370468491,
+					"parameters": {
+						"animation": "\"handWithFood\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "food7",
+					"sid": 840549570532722
+				}
+			],
+			"sid": 304072300747927
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Paths",
+					"sid": 112722044793066,
+					"parameters": {
+						"object": "foodbullet"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "foodbullet",
+					"sid": 477991985659207
+				}
+			],
+			"sid": 823360036425450
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "foodbullet",
+					"sid": 360485325576131,
+					"parameters": {
+						"object": "bunny"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "bunny",
+					"sid": 699511838743301,
+					"parameters": {
+						"animation": "\"MouthOpen\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 189354320352868
+		}
+	],
+	"sid": 729270037668321
+}
